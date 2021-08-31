@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto";
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+a:not(.form-field-policy__link) {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section-sizing {
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flow-root;
+  padding: 0 15px;
+}
+.main-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hidden-title {
+  visibility: hidden;
+}

@@ -1,0 +1,26 @@
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  transition-property: background-color, color, fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+}
+button:not(.modal-btn):hover,
+button:not(.modal-btn):focus {
+  background-color: $logo-and-btn-color;
+  color: $primary-color;
+}
+.button {
+  background: $logo-and-btn-color;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: $primary-font-weight;
+  font-size: $primary-font-size;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-color;
+}

@@ -1,0 +1,30 @@
+.advantages-section {
+  padding-top: 94px;
+  font-size: $secondary-font-size;
+}
+
+.advantages-section__advantage {
+  margin: 0 15px;
+}
+.advantages-section__icons {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 102px;
+}
+.advantages-section__icon {
+  width: 65px;
+  height: 70px;
+}
+.advantages-section__subtitle {
+  font-weight: $primary-font-weight;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.advantages-section__description {
+  font-size: $secondary-font-size;
+  line-height: 1.7;
+  color: $secondary-text-color;
+  padding-right: 15px;
+}
