@@ -1,9 +1,21 @@
+.hidden-section {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .section-title {
   font-weight: $primary-font-weight;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
+}
+.our-work-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .our-work-section__pic {
   position: relative;

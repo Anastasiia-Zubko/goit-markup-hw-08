@@ -1,10 +1,10 @@
 .filter {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter__btn {
   font-weight: $tertiary-font-weight;
@@ -17,7 +17,7 @@
   border-radius: 4px;
 
   padding: 6px 22px;
-  margin: 0 4px;
+  margin: 5px 4px;
 }
 .filter__btn:focus,
 .filter__btn:hover {

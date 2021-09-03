@@ -15,11 +15,11 @@
 <body>
 
 <header>
-    <div class="main-flex container header-container ">
-        <nav class="main-flex">
+    <div class="container header-container ">
+        <nav class="header-container__nav">
             <a href="./index.html" class="logo header-container__logo"> <span
                     class="header-container__logo--blue">Web</span>Studio</a>
-            <ul class="main-flex">
+            <ul class="header-container__list" >
                 <li class="header-container__nav-link-current"><a href=""
                         class="header-container__nav-link header-container__nav-link--current">Студия</a> </li>
                 <li class="header-container__nav-link-current"><a href="./portfolio.html"
@@ -28,8 +28,7 @@
                         class="header-container__nav-link">Контакты</a></li>
             </ul>
         </nav>
-
-        <ul class="main-flex">
+        <ul class="header-container__contacts">
             <li> <a href="mailto:info@devstudio.com" class="header-container__nav-contact main-flex">
                     <svg class="header-container__nav-contact-icon" width="22" height="16">
                         <use href="./images/icons.svg#icon-envelope"></use>
@@ -121,10 +120,10 @@
     </section>
 
 
-    <section class="advantages-section section-sizing">
+    <section class="section-sizing">
         <div class="container">
             <h2 class="hidden-title">Наши преимущества</h2>
-            <ul class="main-flex">
+            <ul class="advantages-section">
                 <li class="advantages-section__advantage">
                     <div class="advantages-section__icons">
                         <svg class="advantages-section__icon">
@@ -169,10 +168,10 @@
         </div>
     </section>
 
-    <section class="our-work-section section-sizing">
+    <section class="section-sizing hidden-section">
         <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="main-flex">
+            <ul class="our-work-section">
                 <li class="our-work-section__pic"> <img src="./images/img.jpg" alt="programer-working-his-desk-office"
                         width="370" height="294" class="our-work-pics">
                     <div class="our-work-section__pic-overlay">Десктопные приложения</div>
@@ -195,10 +194,10 @@
     <section class="our-team-section section-sizing">
         <div class="container">
             <h2 class="section-title">Наша команда</h2>
-            <ul class="main-flex">
+            <ul class="our-team-section__team">
                 <li class="team-member-card">
-                    <img src="./images/img3.jpg" alt="Igor_demyanenko_photo" width="270" height="260">
                     <div class="team-member-card__info">
+                        <img src="./images/img3.jpg" alt="Igor_demyanenko_photo" width="270" height="260" class="team-member__pic">
                         <h3 class="team-member-card__subtitle">Игорь Демьяненко</h3>
                         <p class="team-member-card__description">Product Designer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -233,9 +232,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="team-member-card">
-                    <img src="./images/img4.jpg" alt="olga_repina_photo" width="270" height="260">
+                <li class="team-member-card">   
                     <div class="team-member-card__info">
+                        <img src="./images/img4.jpg" alt="olga_repina_photo" width="270" height="260" class="team-member__pic">
                         <h3 class="team-member-card__subtitle">Ольга Репина</h3>
                         <p class="team-member-card__description">Frontend Developer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -271,8 +270,9 @@
                     </div>
                 </li>
                 <li class="team-member-card">
-                    <img src="./images/img5.jpg" alt="nikolai_tarasov_photo" width="270" height="260">
+                    
                     <div class="team-member-card__info">
+                        <img src="./images/img5.jpg" alt="nikolai_tarasov_photo" width="270" height="260" class="team-member__pic">
                         <h3 class="team-member-card__subtitle">Николай Тарасов</h3>
                         <p class="team-member-card__description">Marketing</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -308,8 +308,9 @@
                     </div>
                 </li>
                 <li class="team-member-card">
-                    <img src="./images/img6.jpg" alt="mikhail_ermakov_photo" width="270" height="260">
+                    
                     <div class="team-member-card__info">
+                        <img src="./images/img6.jpg" alt="mikhail_ermakov_photo" width="270" height="260" class="team-member__pic">
                         <h3 class="team-member-card__subtitle">Михаил Ермаков</h3>
                         <p class="team-member-card__description">UI Designer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -351,7 +352,7 @@
     <section class="regular-clients section-sizing">
         <div class="container">
             <h2 class="section-title">Постоянные клиенты</h2>
-            <ul class="regular-clients__clients-list main-flex">
+            <ul class="regular-clients__clients-list">
                 <li>
                     <a href="" class="regular-clients__client">
                         <svg class="regular-clients__logo">
@@ -403,7 +404,7 @@
 
 <footer>
     <div class="container footer-section">
-        <div>
+        <div class="footer-section__item">
             <a href="./index.html" class="logo footer-section--logo-white"> <span
                     class="footer-section__logo-blue">Web</span>Studio</a>
             <address>
@@ -417,7 +418,7 @@
                 </ul>
             </address>
         </div>
-        <div>
+        <div  class="footer-section__item">
             <h2 class="footer-section__title">присоединяйтесь</h2>
             <ul class="main-flex">
                 <li>
@@ -450,7 +451,7 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="footer-section__item footer-section__subscribe">
             <h2 class="footer-section__title">Подпишитесь на рассылку</h2>
             <form name="signup_form" autocomplete="on" novalidate class="subscribe-form main-flex">
                 <label class="subscribe-form__label">
