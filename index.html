@@ -19,6 +19,7 @@
         <nav class="header-container__nav">
             <a href="./index.html" class="logo header-container__logo"> <span
                     class="header-container__logo--blue">Web</span>Studio</a>
+
             <ul class="header-container__list" >
                 <li class="header-container__nav-link-current"><a href=""
                         class="header-container__nav-link header-container__nav-link--current">Студия</a> </li>
@@ -43,6 +44,55 @@
             </li>
         </ul>
     </div>
+
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+    </svg>
+</button>
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg class="menu-button__close" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__nav-link"><a href="./index.html"
+                        class="mobile-nav__nav-link--current">Студия</a> </li>
+                <li class="mobile-nav__nav-link"><a href="./portfolio.html"
+                    >Портфолио</a></li>
+                <li class="mobile-nav__nav-link"><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+            <div class="contacts">
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__phone--margin"> <a href="tel:+380961111111" class="mobile-contacts__phone">
+                        +38 096 111 11 11 </a>
+                    </li>
+                    <li> <a href="mailto:info@devstudio.com" class="mobile-contacts__email">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-socials__list">
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-socials__item">
+                        <a class="mobile-socials__link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</div>
+
 </header>
 
 <main>
@@ -197,7 +247,10 @@
             <ul class="our-team-section__team">
                 <li class="team-member-card">
                     <div class="team-member-card__info">
-                        <img src="./images/img3.jpg" alt="Igor_demyanenko_photo" width="270" height="260" class="team-member__pic">
+                        <img class="team-member__pic" srcset="
+                                          ./images/team1m.jpg 1x,
+                                          ./images/team1t.jpg 2x" 
+                                          src="./images/img3.jpg" alt="Igor_demyanenko_photo" />
                         <h3 class="team-member-card__subtitle">Игорь Демьяненко</h3>
                         <p class="team-member-card__description">Product Designer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -234,7 +287,10 @@
                 </li>
                 <li class="team-member-card">   
                     <div class="team-member-card__info">
-                        <img src="./images/img4.jpg" alt="olga_repina_photo" width="270" height="260" class="team-member__pic">
+                        <img class="team-member__pic" srcset="
+                            ./images/team2m.jpg 1x,
+                            ./images/team2t.jpg 2x"
+                            src="./images/img4.jpg" alt="olga_repina_photo" />
                         <h3 class="team-member-card__subtitle">Ольга Репина</h3>
                         <p class="team-member-card__description">Frontend Developer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -272,7 +328,9 @@
                 <li class="team-member-card">
                     
                     <div class="team-member-card__info">
-                        <img src="./images/img5.jpg" alt="nikolai_tarasov_photo" width="270" height="260" class="team-member__pic">
+                        <img class="team-member__pic" srcset="
+                                                    ./images/team3m.jpg 1x,
+                                                    ./images/team3t.jpg 2x" src="./images/img5.jpg" alt="nikolai_tarasov_photo"/>
                         <h3 class="team-member-card__subtitle">Николай Тарасов</h3>
                         <p class="team-member-card__description">Marketing</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -310,7 +368,10 @@
                 <li class="team-member-card">
                     
                     <div class="team-member-card__info">
-                        <img src="./images/img6.jpg" alt="mikhail_ermakov_photo" width="270" height="260" class="team-member__pic">
+                        <img class="team-member__pic" srcset="
+                            ./images/team4m.jpg 1x,
+                            ./images/team4t.jpg 2x" src="./images/img6.jpg"
+                            alt="mikhail_ermakov_photo" />
                         <h3 class="team-member-card__subtitle">Михаил Ермаков</h3>
                         <p class="team-member-card__description">UI Designer</p>
                         <ul class="team-member-card__social-links main-flex">
@@ -468,6 +529,10 @@
 </footer>
 
 <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

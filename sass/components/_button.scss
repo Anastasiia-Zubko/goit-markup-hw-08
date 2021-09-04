@@ -6,8 +6,8 @@ button {
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
 }
-button:not(.modal-btn):hover,
-button:not(.modal-btn):focus {
+button:not(.modal-btn):not(.menu-button):hover,
+button:not(.modal-btn):not(.menu-button):focus {
   background-color: $logo-and-btn-color;
   color: $primary-color;
 }
