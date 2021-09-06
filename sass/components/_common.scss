@@ -2,6 +2,7 @@ body {
   font-family: "Roboto";
   letter-spacing: 0.03em;
   color: $primary-text-color;
+  overflow-x: hidden;
 }
 a:not(.form-field-policy__link) {
   text-decoration: none;
@@ -29,7 +30,7 @@ img {
   margin: 0 auto;
   display: flow-root;
   padding: 0 15px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {

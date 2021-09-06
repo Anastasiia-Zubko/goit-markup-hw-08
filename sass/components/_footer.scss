@@ -34,6 +34,11 @@ footer a:not(.logo):focus {
     align-items: center;
     margin-bottom: 50px;
   }
+  &:last-child {
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 10px;
+    }
+  }
 }
 .footer-section--logo-white {
   color: $primary-color;
@@ -65,14 +70,18 @@ footer a:not(.logo):focus {
 }
 
 .subscribe-form {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .subscribe-form__label {
-  @media screen and (max-width: 768px) {
-    margin: 20px 0;
+  @media screen and (max-width: 1200px) {
+    margin: 20px 120px;
   }
 }

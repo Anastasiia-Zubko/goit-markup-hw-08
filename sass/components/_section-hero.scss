@@ -10,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/header_mobile.jpg");
+    url("../images/hero_mobile.jpg");
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/Header_tablet.jpg");
+      url("../images/hero_tablet.jpg");
   }
 
   @media screen and (min-width: 1200px) {
