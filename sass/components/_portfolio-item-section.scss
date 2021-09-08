@@ -21,17 +21,16 @@
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
+    margin: 30px 0;
   }
 }
 .item__pic {
   width: 450px;
   @media screen and (min-width: 768px) {
-    max-width: 354px;
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    width: 270px;
+    width: 370px;
   }
 }
 .item__box {
@@ -56,7 +55,7 @@
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -64,6 +63,12 @@
   transition-property: transform, opacity;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-function;
+  @media screen and (min-width: 768px) {
+    padding: 39px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .item__box:hover,
