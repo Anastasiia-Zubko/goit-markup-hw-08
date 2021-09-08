@@ -39,7 +39,13 @@ img {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -215,7 +221,7 @@ header a:not(.logo):focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-container__contacts {
     visibility: hidden;
   }
@@ -385,8 +391,8 @@ header a:not(.logo):focus .header-container__nav-contact-icon {
   padding: 32px;
   z-index: 999;
   overflow: hidden;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -536,8 +542,6 @@ header a:not(.logo):focus .header-container__nav-contact-icon {
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img1600.jpg");
@@ -1395,7 +1399,7 @@ footer a:not(.logo):focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1647,6 +1651,24 @@ footer a:not(.logo):focus {
   .item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.item__pic {
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .item__pic {
+    max-width: 354px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item__pic {
+    max-width: 270px;
+    width: 270px;
   }
 }
 

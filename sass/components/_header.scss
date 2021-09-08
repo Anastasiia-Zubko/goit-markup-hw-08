@@ -51,7 +51,7 @@ header a:not(.logo):focus {
   }
 }
 .header-container__contacts {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     visibility: hidden;
   }
   @media screen and (max-width: 1119px) {
@@ -179,7 +179,7 @@ header a:not(.logo):focus .header-container__nav-contact-icon {
   padding: 32px;
   z-index: 999;
   overflow: hidden;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
 }
 .menu-container.is-open {
