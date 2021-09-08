@@ -1513,6 +1513,12 @@ footer a:not(.logo):focus {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .subscribe-form input {
+    max-width: 320px;
+  }
+}
+
 .footer-section__title {
   font-weight: 700;
   font-size: 14px;
