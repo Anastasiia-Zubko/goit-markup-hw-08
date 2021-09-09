@@ -175,7 +175,7 @@ header a:not(.logo):focus .header-container__nav-contact-icon {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
   padding: 32px;
   z-index: 999;
   overflow: hidden;
@@ -202,14 +202,15 @@ header a:not(.logo):focus .header-container__nav-contact-icon {
   top: 16px;
   right: 16px;
 }
-
-.mobile-menu {
+.mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.mobile-nav {
-  margin-bottom: 200px;
 }
 .mobile-nav__list {
   font-weight: 500;
